@@ -173,9 +173,12 @@ function App() {
       <DigitButton digit="0" dispatch={dispatch}/>
       <button className="span-two" onClick={() => dispatch({type: ACTIONS.EVALUATE})}> = </button>
 
-
-
+      
+      <div className="footer">
+        <span>Kalash Telkar</span>
+      </div>
     </div>
+    
   );
 }
 
