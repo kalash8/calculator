@@ -4,11 +4,10 @@
 
 body {
     display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  background-color: #272727;
-    
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
 }
 
 .container {
@@ -49,7 +48,6 @@ body {
   height: 80px;
   width: 80px;
   background: linear-gradient(90deg, #1f1e1e, #3f3f3f);
-  
   user-select: none;
   cursor: pointer;
   font-weight: 400;

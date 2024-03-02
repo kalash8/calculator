@@ -153,34 +153,27 @@ function App() {
         <div className="previous-operand">{formatOperand(previousOperand) } {operation}</div>
         <div className="current-operand">{formatOperand(currentOperand) }</div>
       </div>
-
-    <div className="calculator-grid">
-      
-      
-
-      <div className="span-two" onClick={() => dispatch({type: ACTIONS.CLEAR})}><b>AC</b></div>
-      <button onClick={() => dispatch({type: ACTIONS.DELETE_DIGIT})}><b>DEL</b></button>
-      <OperationsButton1 operation="/" dispatch={dispatch}/>
-      <DigitButton digit="7" dispatch={dispatch}/>
-      <DigitButton digit="8" dispatch={dispatch}/>
-      <DigitButton digit="9" dispatch={dispatch}/>
-      <OperationsButton1 operation="*" dispatch={dispatch}/>
-      <DigitButton digit="4" dispatch={dispatch}/>
-      <DigitButton digit="5" dispatch={dispatch}/>
-      <DigitButton digit="6" dispatch={dispatch}/>
-      <OperationsButton1 operation="+" dispatch={dispatch}/>
-      <DigitButton digit="1" dispatch={dispatch}/>
-      <DigitButton digit="2" dispatch={dispatch}/>
-      <DigitButton digit="3" dispatch={dispatch}/>
-      <OperationsButton1 operation="-" dispatch={dispatch}/>
-      <DigitButton digit="0" dispatch={dispatch}/>
-      <DigitButton digit="." dispatch={dispatch}/>
-      <div className="span-one" onClick={() => dispatch({type: ACTIONS.EVALUATE})}> = </div>
-    
-      
-    </div>
-    </div>
-    
+      <div className="calculator-grid">
+        <div className="span-two" onClick={() => dispatch({type: ACTIONS.CLEAR})}><b>AC</b></div>
+        <button onClick={() => dispatch({type: ACTIONS.DELETE_DIGIT})}><b>DEL</b></button>
+        <OperationsButton1 operation="/" dispatch={dispatch}/>
+        <DigitButton digit="7" dispatch={dispatch}/>
+        <DigitButton digit="8" dispatch={dispatch}/>
+        <DigitButton digit="9" dispatch={dispatch}/>
+        <OperationsButton1 operation="*" dispatch={dispatch}/>
+        <DigitButton digit="4" dispatch={dispatch}/>
+        <DigitButton digit="5" dispatch={dispatch}/>
+        <DigitButton digit="6" dispatch={dispatch}/>
+        <OperationsButton1 operation="+" dispatch={dispatch}/>
+        <DigitButton digit="1" dispatch={dispatch}/>
+        <DigitButton digit="2" dispatch={dispatch}/>
+        <DigitButton digit="3" dispatch={dispatch}/>
+        <OperationsButton1 operation="-" dispatch={dispatch}/>
+        <DigitButton digit="0" dispatch={dispatch}/>
+        <DigitButton digit="." dispatch={dispatch}/>
+        <div className="span-one" onClick={() => dispatch({type: ACTIONS.EVALUATE})}> = </div>
+      </div>
+    </div> 
   );
 }
 
